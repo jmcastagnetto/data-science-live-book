@@ -60,18 +60,18 @@ The book will facilitate the understanding of common issues when data analysis a
 Building a predictive model is as difficult as one line of `R` code: 
 
 ```{r, eval=FALSE, echo=TRUE}
-my_fancy_model=randomForest(target ~ var_1 + var_2, my_complicated_data)
+my_fancy_model = randomForest(target ~ var_1 + var_2, my_complicated_data)
 ```
 
 That's it. 
 
-But, data has its dirtiness in practice. We need to sculp it, just like an artist does, to expose its information in order to find answers (and new questions).
+But, data has its dirtiness in practice. We need to sculpt it, just like an artist does, to expose its information in order to find answers (and new questions).
 
-There are many challenges to solve, some data sets requiere more _sculpting_ than others. Just to give an example, random forest does not accept empty values, so what to do then? Do we remove the rows in conflict? Or do we transform the empty values into other values? **What is the implication**, in any case, to _my_ data?
+There are many challenges to solve, some data sets require more _sculpting_ than others. Just to give an example, random forest does not accept empty values, so what to do then? Do we remove the rows in conflict? Or do we transform the empty values into other values? **What is the implication**, in any case, to _my_ data?
 
 Despite the empty values issue, we have to face other situations such as the extreme values (outliers) that tend to bias not only the predictive model itself, but the interpretation of the final results. It's common to "try and guess" _how_ the predictive model considers each variable (ranking best variables), and what the values that increase (or decrease) the likelihood of some event to happening (profiling variables) are.
 
-Deciding the **data type** of the variables may not be trivial. A categorical variable _could be_ numerical and viceversa, depending on the context, the data, and the algorithm itself (some of which only handle one data type). The conversion also has its own implications in _how the model sees the variables_.
+Deciding the **data type** of the variables may not be trivial. A categorical variable _could be_ numerical and viceverse, depending on the context, the data, and the algorithm itself (some of which only handle one data type). The conversion also has its own implications in _how the model sees the variables_.
 
 It is a book about data preparation, data analysis and machine learning. Generally in literature, data preparation is not as popular as the creation of machine learning models.
 
